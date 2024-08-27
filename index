@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chit0s3a5</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+  |
+  <audio id ="myAudio"src="smash.mp3" ></audio>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Chit0s3a5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Cambiar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Lista-de-precios">Lista de precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="segundo.html"> Login
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio">
+    <section class="py-5">
+      <div class="container">
+        <div class="row object-row"> 
+            <div class="col-4">
+                <div class="image-container">
+                    <a href="#Hollow-Knigth">
+                      <img src="logo1.png" id="clase" alt="clase" class="clase">
+                      </a>
+                    <div class="info-overlay">
+                      <p>Hollow-Knight </p>
+                      
+                    </div>
+                </div>
+            </div>
+          <div class="col-4">
+              <div class="image-container">
+                <a href="#Chainsaw-Man">
+                  <img src="logo2.png" id="clase" alt="clase" class="clas">
+                  <div class="info-overlay">
+                    <p>Chainsaw-Man </p>
+                    
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    </section>
+  <section id="inicio">
+    <section class="py-5">
+      <div class="container">
+        <div class="row object-row"> 
+            <div class="col-4">
+                <div class="image-container">
+                    <a href="#Hibike-Euphonium">
+                      <img src="logo3.png" id="clase" alt="clase" class="clase">
+                      </a>
+                    <div class="info-overlay">
+                      <p>Hollow-Knight </p>
+
+                    </div>
+                </div>
+            </div>
+          <div class="col-4">
+              <div class="image-container">
+                <a href="#Chainsaw-Man">
+                  <img src="logo4.png" id="clase" alt="clase" class="clas">
+                  <div class="info-overlay">
+                    <p>Chainsaw-Man </p>
+
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </section>
+  <section id="productos">
+    
+    <h2>Categorias</h2>
+
+    <div class="list-group">
+      <a href="#Hollow-Knigth" class="list-group-item list-group-item-action">Hollow Knigth</a>
+
+      <a href="#Chainsaw-Man" class="list-group-item list-group-item-action list-group-item-primary">Chainsaw Man</a>
+
+      <a href="#Hibike-Euphonium" class="list-group-item list-group-item-action list-group-item-primary">Hibike Euphonium</a>
+
+    </div>
+    <section id="Hollow-Knigth">
+      <h2 class="titulo">Hollow knigth</h2>
+     
+            <section class="py-5">
+              <div class="container">
+                <div class="row object-row"> 
+                    <div class="col-4">
+                        <div class="image-container">
+                            <img src="hollow.png" alt="Ashley" class="hover-image">
+                            <div class="info-overlay">
+                              <p>Receptaculo </p>
+                              <p>Personaje principal de Hollow knigth</p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-4">
+                      <div class="image-container">
+                          <img src="hornett.png" alt="Ashley" class="hover-image"
+                            >
+                          <div class="info-overlay">
+                            <p>Hornett </p>
+                            <p>Suelten silksong luego</p>
+                          </div>
+                      </div>
+                  </div>
+              <div class="col-4">
+                        <div class="image-container">
+                            <img src="quirrell.png" alt="Ashley" class="hover-image">
+                            <div class="info-overlay">
+                                <p>Quirrel </p>
+                              <p>Mejor personaje del juego</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+      </section>
+    </section>
+    <section id="Chainsaw-Man">
+      <h2 class="titulo">Chainsaw Man</h2>
+  <section class="py-5">
+          <div class="container">
+            <div class="row object-row"> 
+                <div class="col-4">
+                    <div class="image-container">
+                        <img src="power.png" alt="Ashley" class="hover-imag">
+                        <div class="info-overlay">
+                          <p>Power </p>
+                          <p>Demon blood</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-4">
+                  <div class="image-container">
+                      <img src="pochita.png" alt="Ashley" class="hover-imag"
+                        >
+                      <div class="info-overlay">
+                        <p>Pochita </p>
+                        <p>I love you pochita</p>
+                      </div>
+                  </div>
+              </div>
+          <div class="col-4">
+                    <div class="image-container">
+                        <img src="kobeni.png" alt="Ashley" class="hover-imag">
+                        <div class="info-overlay">
+                            <p>Kobeni </p>
+                          <p>Kobeni toda bonita y pechocha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+  </section>
+  </section>
+  <section id="Hibike-Euphonium">
+    <h2 class="titulo">Hibike! Euphonium</h2>
+    <section class="py-5">
+            <div class="container">
+              <div class="row object-row"> 
+                  <div class="col-4">
+                      <div class="image-container">
+                          <img src="kumiko.png" alt="Ashley" class="hover-ima">
+                          <div class="info-overlay">
+                            <p>Kumiko </p>
+                            <p>De mis personajes favoritos</p>
+                          </div>
+                      </div>
+                  </div>
+                <div class="col-4">
+                    <div class="image-container">
+                        <img src="Sapphire.png" alt="Ashley" class="hover-ima"
+                          >
+                        <div class="info-overlay">
+                          <p>Sapphire </p>
+                          <p>Midori so cute</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-4">
+                      <div class="image-container">
+                          <img src="miamor.png" alt="Ashley" class="hover-ima">
+                          <div class="info-overlay">
+                              <p>Mi amor mi reina </p>
+                            <p>Reina Kousaka</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    </section>
+  </section>
+  <section id="Lista-de-precios">
+    <h2>Lista de precios</h2>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Peluche</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Receptaculo</td>
+          <td>$10.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hornett</td>
+          <td>$12.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td> Quirrel</td>
+          <td> $15.000</td>
+          <td>si</td>
+        </tr>
+
+        <tr>
+          <th scope="row">1</th>
+          <td>Power</td>
+          <td>$10.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Pochita</td>
+          <td>$12.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td> Kobeni</td>
+          <td> $15.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td> Kumiko</td>
+          <td> $15.000</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td> midori</td>
+          <td> $12.800</td>
+          <td>si</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td> Reina</td>
+          <td> $15.000</td>
+          <td>si</td>
+        </tr>
+      </tbody>
+      <button onclick="topFunction()" id="myBtn" title="Go to Top">Volver al inicio</button>
+     
+    </table>
+
+  </section>
+    <a href="https://812fd144-fef7-46ee-bb44-32bc4dcb15af-00-lfvbihkt6fpu.spock.replit.dev/">
+    <img src="power2.png" id="cornerImage" alt="Corner Image">
+    </a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    <script>
+      document.querySelector('.hover-image').addEventListener('click', function() {
+          window.location.href = 'https://www.youtube.com/watch?v=N8Xr6x92MD0'; 
+      });
+    </script>
+    <script>
+      const cornerLink = document.querySelector('a[href="https://812fd144-fef7-46ee-bb44-32bc4dcb15af-00-lfvbihkt6fpu.spock.replit.dev/"]');
+      cornerLink.addEventListener('click', function(event) {
+         event.preventDefault(); 
+      });
+    </script>
+    <script>
+      document.querySelector('.hover-imag').addEventListener('click', function() {
+                                                             window.location.href = 'https://www.youtube.com/watch?v=hEDJFiOJkOw';
+      });
+    </script>
+    <script>
+      document.querySelector('.hover-ima').addEventListener('click', function() {
+          window.location.href = 'https://www.youtube.com/watch?v=cHQJX8a8CWc';
+      });
+    </script>
+    
+</body>
+
+</html>
