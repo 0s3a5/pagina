@@ -1,0 +1,134 @@
+imagenesarmas {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: auto; /* Ajusta la altura para adaptarse al contenido */
+}
+
+/* Estilos para la sección principal de contenido */
+.contenido-principal {
+  padding-top: 0vw;
+  flex-wrap: wrap;
+  gap: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  margin-bottom: -30vw; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para la cuadrícula de productos */
+.cuadro-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* Estilos para el bloque de imagen de cada producto */
+.bloque-imagen {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Estilos para la imagen dentro del bloque */
+.bloque-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  clip-path: inset(0 0 42px 0); /* Recorta la parte superior que se elevará */
+}
+
+/* Efecto de subir la imagen al pasar el ratón por encima, sin cambiar el tamaño del contenedor */
+.bloque-imagen:hover img {
+  transform: translateY(-42px); /* Eleva la imagen hacia arriba */
+}
+
+/* Estilos para el contenedor de descripción del producto */
+.bloque-imagen .contenedor-descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 44%;
+  background-color: #4e342e;
+  padding: 6px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto para mostrar la descripción al pasar el ratón por encima */
+.bloque-imagen:hover .contenedor-descripcion {
+  transform: translateY(0);
+}
+
+/* Estilos para el texto de la descripción */
+.bloque-imagen .descripcion {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Estilo para el nombre del producto en la parte inferior de la imagen */
+.bloque-imagen .nombre {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+
+
+
+
+
+/* EJEMPLO
+
+
+<div class="imagenesarmas">
+  <div class="contenido-principal">
+      <div class="cuadro-productos" id="cuadro-productos">
+
+         (todas las imagenes que se coloquen deben aqui dentro)
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<a href="riflescar.html" class="bloque-imagen">
+    <!-- imagen del producto -->
+    <img src="https://dojiw2m9tvv09.cloudfront.net/59007/product/ares-electric-rifle-scar-h-ar-061-e-ar-sc-ht3154.jpg" alt="Rifle SCAR-H">
+    <!-- Nombre del producto en la parte inferior de la imagen -->
+    <div class="nombre">Rifle SCAR-H</div>
+    <!-- contenedor de la descripción del producto que aparece al pasar el ratón por encima -->
+    <div class="contenedor-descripcion">
+        <div class="descripcion">Precio: $2,500 USD<br>Calibre 7.62x51mm OTAN<br>8.4 lbs sin cargador.
+          <div style="height: 2px;"></div>
+          <button class="btn-donate">
+              Añadir al carrito
+          </button>
+        </div>
+    </div>
+</a>
+
+
+
+*/
