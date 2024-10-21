@@ -1,83 +1,43 @@
-imagenesarmas {
-  margin: 0;
-  padding: 0;
+body {
   font-family: Arial, sans-serif;
-  height: auto; /* Ajusta la altura para adaptarse al contenido */
 }
 
-/* Estilos para la sección principal de contenido */
-.contenido-principal {
-  padding-top: 0vw;
-  flex-wrap: wrap;
-  gap: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: auto;
-  margin-bottom: -30vw; /* Ajusta este valor según sea necesario */
+.tarjeta-producto {
+  perspective: 1000px; /* Proporciona la profundidad para el efecto 3D */
 }
 
-/* Estilos para la cuadrícula de productos */
-.cuadro-productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-/* Estilos para el bloque de imagen de cada producto */
-.bloque-imagen {
+.tarjeta-contenido {
   position: relative;
   width: 100%;
   height: 300px;
-  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
 }
 
-/* Estilos para la imagen dentro del bloque */
-.bloque-imagen img {
+.tarjeta-producto:hover .tarjeta-contenido {
+  transform: rotateY(180deg); /* Gira la tarjeta cuando el ratón está encima */
+}
+
+.frontal, .trasera {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta el lado posterior cuando no está frente a la vista */
+  border-radius: 10px;
+}
+
+.frontal {
+  background-color: #fff;
+}
+
+.frontal img {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  clip-path: inset(0 0 42px 0); /* Recorta la parte superior que se elevará */
 }
 
-/* Efecto de subir la imagen al pasar el ratón por encima, sin cambiar el tamaño del contenedor */
-.bloque-imagen:hover img {
-  transform: translateY(-42px); /* Eleva la imagen hacia arriba */
-}
-
-/* Estilos para el contenedor de descripción del producto */
-.bloque-imagen .contenedor-descripcion {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 44%;
-  background-color: #4e342e;
-  padding: 6px;
-  box-sizing: border-box;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-/* Efecto para mostrar la descripción al pasar el ratón por encima */
-.bloque-imagen:hover .contenedor-descripcion {
-  transform: translateY(0);
-}
-
-/* Estilos para el texto de la descripción */
-.bloque-imagen .descripcion {
-  color: white;
-  font-size: 14px;
-  text-align: center;
-}
-
-/* Estilo para el nombre del producto en la parte inferior de la imagen */
-.bloque-imagen .nombre {
+.nombre {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -88,10 +48,25 @@ imagenesarmas {
   font-size: 16px;
 }
 
+.trasera {
+  background-color: #4e342e;
+  color: white;
+  transform: rotateY(180deg); /* Voltea el reverso 180 grados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.trasera .descripcion {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
 
-
-
+.trasera button {
+  margin-top: 10px;
+}
 
 /* EJEMPLO
 
