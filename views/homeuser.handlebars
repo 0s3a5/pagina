@@ -9,7 +9,8 @@
     <link href="/agregaralcarrito.css" rel="stylesheet" type="text/css" />
     <link href="/imagenesarmas.css" rel="stylesheet" type="text/css" />
     <link href="/botonwallet.css" rel="stylesheet" type="text/css" />
-    
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     
     <style>
         .custom-navbar {
@@ -43,7 +44,7 @@
     </script>
    
     
-    <div id="carouselExampleIndicators" class="carousel slide" style="width: 80%; margin: 0 auto;">
+   <div id="carouselExampleIndicators" class="carousel slide" style="width: 80%; margin: 0 auto;">
         <div class="carousel-indicators">
             <buttonn type="buttonn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></buttonn>
@@ -79,90 +80,167 @@
 
 
 
-     <div style="height: 3vh;"></div>
+    <div style="height: 3vh;"></div>
 
 
 
 
 
     <div style="display: flex; justify-content: space-between; padding: 0 10%;">
-        <a href="#armas" style="display: block; width: 45%;">
-            <img src="https://i.imgur.com/RxMAOwM.png" style="width: 100%; height: auto;">
+        <a href="#Hollow-Knigth" style="display: block; width: 45%;">
+            <img src="imagenes/logo1.png" style="width: 100%; height: auto;">
         </a>
-        <a href="#equipo" style="display: block; width: 45%;">
-            <img src="https://i.imgur.com/thhk7bI.png" style="width: 100%; height: auto;">
+        <a href="#Chainsaw-man" style="display: block; width: 45%;">
+            <img src="imagenes/logo2.png" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <div style="display: flex; justify-content: space-between; padding: 0 10%;">
+        <a href="#Hibike" style="display: block; width: 45%;">
+            <img src="imagenes/logo3.png" style="width: 100%; height: auto;">
+        </a>
+        <a href="#Kirby" style="display: block; width: 45%;">
+            <img src="imagenes/logo4.png" style="width: 100%; height: auto;">
         </a>
     </div>
     <div style="height: 0vw;"></div>
     <div style="width: 70%; margin: 0 auto; text-align: center;">
-        <img src="https://i.imgur.com/BBq2k61.png" style="width: 80%; height: auto;">
+        <img src="https://c4.wallpaperflare.com/wallpaper/296/96/958/hollow-knight-quirrel-hollow-knight-hd-wallpaper-preview.jpg" style="width: 80%; height: auto;">
     </div>
 
 
 
 
-
-    <!-- Contenedor principal del producto -->
-<div class="imagenesarmas" style="display: vertical-align: top; margin: 10px;">
+  <section id="Hollow-Knigth">
         <div class="contenido-principal">
             <div class="cuadro-productos" id="cuadro-productos">
-{{#each lista}}
-
-                <!-- bloque de imagen de un producto -->
-                 <a href="pantallaarma?paginaid={{this.id}}" class="bloque-imagen">
-                    <!-- imagen del producto -->
-                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
-                    <!-- Nombre del producto en la parte inferior de la imagen -->
-                    <div class="nombre">{{this.nombre}}</div>
-                    <!-- contenedor de la descripción del producto que aparece al pasar el ratón por encima -->
-                    <div class="contenedor-descripcion">
-                        <div class="descripcion">
-                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
-                            <div style="height: 2px;"></div>
-                            <button href="/login" class="btn-donate">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </a>
-                
-                
-{{/each}}
-</div>
-        </div>
+<div class="container my-5">
+  <div class="row">
+    {{#each lista}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+          <div class="tarjeta-contenido">
+            <div class="frontal">
+              <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+              <div class="nombre">{{this.nombre}}</div>
+            </div>
+            <div class="trasera">
+              <div class="descripcion">
+                Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+              </div>
+            <a href="pantallaarma?paginaid={{this.id}}"> <!-- Añadir enlace aquí -->
+              <button class="btn btn-primary mt-2">Comprar</button>
+            </a>
+            </div>
+          </div>
+      </div>
     </div>
+    {{/each}}
+  </div>
+</div>
 
-  
 
 
+    
 <!-- Contenido adicional fuera del loop -->
-<div style="height: 40vw;"></div>
+
 <div style="width: 70%; margin: 0 auto; text-align: center;">
-    <img src="https://i.imgur.com/6DjSVIy.png" style="width: 80%; height: auto;">
+    <img src="https://images3.alphacoders.com/131/1319293.jpeg" style="width: 80%; height: auto;">
 </div>
 
 
-
-    <div class="imagenesarmas">
+<section id="Chainsaw-man">
         <div class="contenido-principal">
             <div class="cuadro-productos" id="cuadro-productos">
-{{#each lista2}}
-                <!-- bloque de imagen de un producto -->
-               <a href="pantallaobjeto?paginaid={{this.id}}" class="bloque-imagen">
-                    <!-- imagen del producto -->
-                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
-                    <!-- Nombre del producto en la parte inferior de la imagen -->
-                    <div class="nombre">{{this.nombre}}</div>
-                    <!-- contenedor de la descripción del producto que aparece al pasar el ratón por encima -->
-                    <div class="contenedor-descripcion">
-                        <div class="descripcion">
-                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
-                            <div style="height: 2px;"></div>
-                            <button class="btn-donate">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </a>
-{{/each}}
-</div>
+<div class="container my-5">
+  <div class="row">
+    {{#each lista2}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+        <div class="tarjeta-contenido">
+          <div class="frontal">
+            <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+            <div class="nombre">{{this.nombre}}</div>
+          </div>
+          <div class="trasera">
+            <div class="descripcion">
+              Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+            </div>
+            <a href=""pantallaarma?paginaid={{this.id}}""> 
+              <button class="btn btn-primary mt-2">Comprar</button>
+            </a> 
+          </div>
         </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+   
+   <div style="width: 70%; margin: 0 auto; text-align: center;">
+    <img src="https://c4.wallpaperflare.com/wallpaper/555/720/1001/kousaka-reina-oumae-kumiko-anime-hibike-euphonium-wallpaper-preview.jpg" style="width: 80%; height: auto;">
+</div>
+
+
+<section id="Hibike">
+        <div class="contenido-principal">
+            <div class="cuadro-productos" id="cuadro-productos">
+<div class="container my-5">
+  <div class="row">
+    {{#each lista2}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+        <div class="tarjeta-contenido">
+          <div class="frontal">
+            <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+            <div class="nombre">{{this.nombre}}</div>
+          </div>
+          <div class="trasera">
+            <div class="descripcion">
+              Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+            </div>
+            <a href="login"> <!-- Añadir enlace aquí -->
+              <button class="btn btn-primary mt-2">Comprar</button>
+            </a> <!-- Cerrar el enlace aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+   
+   <div style="width: 70%; margin: 0 auto; text-align: center;">
+    <img src="https://fondosmil.co/fondo/98732.jpg" style="width: 80%; height: auto;">
+</div>
+
+
+<section id="Kirby">
+        <div class="contenido-principal">
+            <div class="cuadro-productos" id="cuadro-productos">
+<div class="container my-5">
+  <div class="row">
+    {{#each lista2}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+        <div class="tarjeta-contenido">
+          <div class="frontal">
+            <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+            <div class="nombre">{{this.nombre}}</div>
+          </div>
+          <div class="trasera">
+            <div class="descripcion">
+              Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+            </div>
+           <a href=""pantallaarma?paginaid={{this.id}}""> 
+              <button class="btn btn-primary mt-2">Comprar</button>
+            </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
     </div>
     <div style="height: 65%;"></div> <!-- separador -->
 
@@ -176,4 +254,4 @@
   
 </body>
 
-</html>
+        </html>
