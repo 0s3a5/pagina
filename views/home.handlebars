@@ -9,6 +9,7 @@
     <link href="/agregaralcarrito.css" rel="stylesheet" type="text/css" />
     <link href="/imagenesarmas.css" rel="stylesheet" type="text/css" />
     <link href="/botonwallet.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
     
     <style>
@@ -83,10 +84,18 @@
 
     <div style="display: flex; justify-content: space-between; padding: 0 10%;">
         <a href="#armas" style="display: block; width: 45%;">
-            <img src="https://i.imgur.com/RxMAOwM.png" style="width: 100%; height: auto;">
+            <img src="imagenes/logo1" style="width: 100%; height: auto;">
         </a>
         <a href="#equipo" style="display: block; width: 45%;">
-            <img src="https://i.imgur.com/thhk7bI.png" style="width: 100%; height: auto;">
+            <img src="imagenes/logo2" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    div style="display: flex; justify-content: space-between; padding: 0 10%;">
+        <a href="#armas" style="display: block; width: 45%;">
+            <img src="imagenes/logo3" style="width: 100%; height: auto;">
+        </a>
+        <a href="#equipo" style="display: block; width: 45%;">
+            <img src="imagenes/logo4" style="width: 100%; height: auto;">
         </a>
     </div>
     <div style="height: 0vw;"></div>
@@ -100,29 +109,29 @@
   <div class="imagenesarmas">
         <div class="contenido-principal">
             <div class="cuadro-productos" id="cuadro-productos">
-{{#each lista}}
-  
-                <!-- bloque de imagen de un producto -->
-                <a href="login" class="bloque-imagen">
-                    <!-- imagen del producto -->
-                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
-                    <!-- Nombre del producto en la parte inferior de la imagen -->
-                    <div class="nombre">{{this.nombre}}</div>
-                    <!-- contenedor de la descripción del producto que aparece al pasar el ratón por encima -->
-                    <div class="contenedor-descripcion">
-                        <div class="descripcion">
-                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
-                            <div style="height: 2px;"></div>
-                            <button class="btn-donate">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </a>
-            
-    
-{{/each}}
-</div>
+
+              <div class="container my-5">
+  <div class="row">
+    {{#each lista}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+        <div class="tarjeta-contenido">
+          <div class="frontal">
+            <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+            <div class="nombre">{{this.nombre}}</div>
+          </div>
+          <div class="trasera">
+            <div class="descripcion">
+              Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+            </div>
+            <button class="btn btn-primary mt-2">Comprar</button>
+          </div>
         </div>
+      </div>
     </div>
+    {{/each}}
+  </div>
+</div>
    
 
 
@@ -138,28 +147,33 @@
 <div class="imagenesarmas">
         <div class="contenido-principal">
             <div class="cuadro-productos" id="cuadro-productos">
-{{#each lista2}}
-    
-                <!-- bloque de imagen de un producto -->
-               <a href="login" class="bloque-imagen">
-                    <!-- imagen del producto -->
-                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
-                    <!-- Nombre del producto en la parte inferior de la imagen -->
-                    <div class="nombre">{{this.nombre}}</div>
-                    <!-- contenedor de la descripción del producto que aparece al pasar el ratón por encima -->
-                    <div class="contenedor-descripcion">
-                        <div class="descripcion">
-                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
-                            <div style="height: 2px;"></div>
-                            <button class="btn-donate">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </a>
-            
-{{/each}}
-</div>
+<div class="container my-5">
+  <div class="row">
+    {{#each lista2}}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="tarjeta-producto">
+        <div class="tarjeta-contenido">
+          <div class="frontal">
+            <img src="{{{this.link_imagen_principal}}}" alt="Producto" class="img-fluid">
+            <div class="nombre">{{this.nombre}}</div>
+          </div>
+          <div class="trasera">
+            <div class="descripcion">
+              Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}
+            </div>
+            <button class="btn btn-primary mt-2">Comprar</button>
+          </div>
         </div>
+      </div>
     </div>
+    {{/each}}
+  </div>
+</div>
+   
+
+
+
+    
     <div style="height: 65%;"></div> <!-- separador -->
 
 
