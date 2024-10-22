@@ -460,3 +460,24 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
+
+
+//---------------------------------------------------------------------------carro
+app.get("/carrito", async (req, res) => 
+{
+  res.render("carrito");
+});
+app.post("anadir", async (req, res) => {
+  const id = req.body.id;
+  const nombre = req.body.nombre;
+  const cantidad = req.body.cantidad;
+  const precio = req.body.precio;
+  const imagen = req.body.imagen;
+  
+ 
+    const query = "INSERT INTO venta (id, nombre, cantidad, precio, imagen) VALUES ($1, $2, $3, $4,$5)";
+    await sql(query, [id, nombre, cantidad, precio, imagen ]);
+
+    res.redirect("carrito");
+  
+});
