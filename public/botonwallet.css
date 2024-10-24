@@ -1,0 +1,252 @@
+/* From Uiverse.io by Peary74 */ 
+button {
+  background: linear-gradient(30deg, #000 35%, #ea8b19 73%);
+  position: relative;
+  padding: 17px 45px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border: 3px solid #ea8b19;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.star-1 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  fill: #ea8b19;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 0 #ea8b19);
+          filter: drop-shadow(0 0 0 #ea8b19);
+  z-index: -5;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+button:hover {
+  background: #000;
+  color: #ea8b19;
+  -webkit-box-shadow: 0 0 50px #ea8b19;
+          box-shadow: 0 0 50px #ea8b19;
+}
+
+button:hover .star-1 {
+  position: absolute;
+  top: -110%;
+  left: -60%;
+  width: 30px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -45%;
+  left: 0%;
+  width: 20px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 11px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  width: 15px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 140%;
+  width: 25px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: -5%;
+  left: 60%;
+  width: 15px;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 10px #ea8b19);
+          filter: drop-shadow(0 0 10px #ea8b19);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #ea8b19;
+}
+
+
+
+
+.box {
+  width: 120px;
+  height: 45px;
+  float: left;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  padding: 8px;
+  margin: -10px -15.5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: white;
+  background: black;
+}
+
+.box:hover:before {
+  border-color: #fff;
+  height: 100%;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: .3s transform linear, .3s height linear .3s;
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #ea8b19;
+  height: 100%;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: .3s transform linear, .3s height linear .5s;
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}

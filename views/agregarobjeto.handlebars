@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Agregar Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+   <form id="addProductForm" action="/newproduct2" method="POST">
+    <h1>Agregar Producto</h1>
+    <label for="name">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="image">URL Foto principal:</label>
+    <input type="text" id="image" name="image" required>
+
+    <label for="image1">URL Foto 1:</label>
+    <input type="text" id="image1" name="image1" required>
+
+    <label for="image2">URL Foto 2:</label>
+    <input type="text" id="image2" name="image2" required>
+
+    <label for="image3">URL Foto 3:</label>
+    <input type="text" id="image3" name="image3" required>
+
+    <label for="video">URL del Video:</label>
+    <input type="text" id="video" name="video" required>
+
+    <label for="descripcion1">Mini descripción 1:</label>
+    <input type="text" id="datos" name="datos" required>
+
+    <label for="descripcion2">Mini descripción 2:</label>
+    <input type="text" id="datof" name="datof" required>
+
+    <label for="price">Precio:</label>
+    <input type="number" id="price" name="price" required>
+
+    <label for="quantity">Cantidad:</label>
+    <input type="number" id="quantity" name="quantity" required>
+
+    <button type="submit">Agregar Producto</button>
+</form>
+
+
+    
+</body>
+</html>

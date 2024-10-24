@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>pagina principal</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/fondo.css" rel="stylesheet" type="text/css" />
+    <link href="/agregaralcarrito.css" rel="stylesheet" type="text/css" />
+    <link href="/imagenesarmas.css" rel="stylesheet" type="text/css" />
+    <link href="/hidden.css" rel="stylesheet" type="text/css" />
+<link href="/botonañadir.css" rel="stylesheet" type="text/css" />
+<link href="/cajaventas.css" rel="stylesheet" type="text/css" />
+<link href="/fondoadmin.css" rel="stylesheet" type="text/css" />
+    <style>
+        .custom-navbar {
+            padding: 20px 0;
+            /* Ajusta ancho de la barra superior */
+        }
+
+@keyframes animate-border {
+        0% {
+            border-image: linear-gradient(45deg, purple, blue, purple, blue);
+        }
+        100% {
+            border-image: linear-gradient(405deg, purple, blue, purple, blue);
+        }
+    }
+
+    </style>
+  
+
+   
+
+ </head>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+<body class="wallpaper">
+<div style="height: calc(17vh + 3vw);"></div>
+
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 31vh; padding: 1rem;">
+    <div class="container" style="width: 100%; max-width: 1000px; text-align: center; padding: 1rem; background-color: black; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); min-height: 250px;">
+        <div class="card" style="margin: 0 auto;">
+            <div class="title">
+                <span>
+                    <svg width="20" fill="currentColor" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"></path>
+                    </svg>
+                </span>
+                <p class="title-text">Ventas Totales</p>
+                <p class="percent">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor" height="20" width="20">
+                        <path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
+                    </svg> 
+                </p>
+            </div>
+            <div class="data">
+                <p>${{total}} USD</p>
+                <div class="range">
+                    <div class="fill"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Mueve los botones aquí debajo del bloque de dinero -->
+        
+        <div style="display: flex; justify-content: space-around; padding: 0 10%; margin-top: 10px;">
+            <button class="cssbuttons-io-button" id="redirigirarma"> añadir arma
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+            <button class="cssbuttons-io-button" id="redirigirobjeto"> añadir equipo
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    // Agregar evento de clic al botón para redirigir a /agregararma
+    document.getElementById('redirigirarma').addEventListener('click', () => {
+        window.location.href = '/agregararma';
+    });
+</script>
+
+<script>
+    // Agregar evento de clic al botón para redirigir a /agregarproducto
+    document.getElementById('redirigirobjeto').addEventListener('click', () => {
+        window.location.href = '/agregarobjeto';
+    });
+</script>
+
+
+
+ 
+ 
+   
+    <div id="miDiv"></div>
+    <script> //compara ancho y alto de la pantalla
+        let dvh = window.innerHeight;
+        let dvw = window.innerWidth;
+        if (dvh > dvw) {
+            document.getElementById('miDiv').style.height = '27%';
+        } else {
+            document.getElementById('miDiv').style.height = '20%';
+        }
+    </script>
+
+
+
+   
+    </script>
+ 
+    <div id="carouselExampleIndicators" class="carousel slide" style="width: 80%; margin: 0 auto;">
+        <div class="carousel-indicators">
+            <buttonn type="buttonn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></buttonn>
+            <buttonn type="buttonn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></buttonn>
+            <buttonn type="buttonn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></buttonn>
+        </div>
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/baner1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/baner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/baner3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <buttonn class="carousel-control-prev" type="buttonn" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </buttonn>
+        <buttonn class="carousel-control-next" type="buttonn" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </buttonn>
+    </div>
+
+    <div style="height: 50px;"></div> <!-- separador -->
+
+    <div style="display: flex; justify-content: space-between; padding: 0 10%;">
+        <a href="#armas" style="display: block; width: 45%;">
+            <img src="https://i.imgur.com/RxMAOwM.png" style="width: 100%; height: auto;">
+        </a>
+        <a href="#equipo" style="display: block; width: 45%;">
+            <img src="https://i.imgur.com/thhk7bI.png" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <div style="height: 0vw;"></div>
+    <div style="width: 70%; margin: 0 auto; text-align: center;">
+        <img src="https://i.imgur.com/BBq2k61.png" style="width: 80%; height: auto;">
+    </div>
+
+
+  <div class="imagenesarmas" style="display: vertical-align: top; margin: 10px;">
+        <div class="contenido-principal">
+            <div class="cuadro-productos" id="cuadro-productos">
+ {{#each lista}}
+  
+                <a href="/editararma?id={{this.id}}" class="bloque-imagen">
+                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
+                    <div class="nombre">{{this.nombre}}</div>
+                    <div class="contenedor-descripcion">
+                        <div class="descripcion">
+                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
+                            <div style="height: 2px;"></div>
+                            <button class="btn-donate">Editar Objeto</button>
+                        </div>
+                    </div>
+                </a>
+ {{/each}}
+</div>
+        </div>
+    </div>
+    
+
+
+
+ <!-- Contenido adicional fuera del loop -->
+<div style="height: 40vw;"></div>
+ <div style="width: 70%; margin: 0 auto; text-align: center;">
+    <img src="https://i.imgur.com/6DjSVIy.png" style="width: 80%; height: auto;">
+ </div>
+
+
+
+   <div class="imagenesarmas" style="display: vertical-align: top; margin: 10px;">
+        <div class="contenido-principal">
+            <div class="cuadro-productos" id="cuadro-productos">
+ {{#each lista2}}
+                 <a href="/editararmadef?id={{this.id}}" class="bloque-imagen">
+                    <img src="{{{this.link_imagen_principal}}}" alt="Rifle SCAR-H">
+                    <div class="nombre">{{this.nombre}}</div>
+                    <div class="contenedor-descripcion">
+                        <div class="descripcion">
+                            Precio: ${{this.precio}} USD<br>{{this.datof}}<br>{{this.datos}}.
+                            <div style="height: 2px;"></div>
+                            <button class="btn-donate">Editar Objeto</button>
+                        </div>
+                    </div>
+                </a>
+ {{/each}}
+ </div>
+        </div>
+    </div>
+    <div style="height: 65%;"></div> <!-- separador -->
+ 
+ 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+Y/mCk4t9IY4yfbiDt8xD9SosB20" crossorigin="anonymous"></script>
+
+ </body>
+</html>
