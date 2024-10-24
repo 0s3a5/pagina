@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Arma</title>
+    <!-- Tu estilo y configuración aquí -->
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <form id="editProductForm" action="/actualizararmadef" method="POST">
+        <h1>Editar Arma</h1>
+
+        <input type="hidden" name="id" value="{{arma.id}}">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{arma.nombre}}" required>
+
+        <label for="definicion">Descripción:</label>
+        <textarea id="definicion" name="definicion" rows="4" required>{{arma.definicion}}</textarea>
+
+        <label for="link_imagen_principal">URL Foto principal:</label>
+        <input type="text" id="link_imagen_principal" name="link_imagen_principal" value="{{arma.link_imagen_principal}}" required>
+
+        <label for="link_imagen1">URL Foto 1:</label>
+        <input type="text" id="link_imagen1" name="link_imagen1" value="{{arma.link_imagen1}}" required>
+
+        <label for="link_imagen2">URL Foto 2:</label>
+        <input type="text" id="link_imagen2" name="link_imagen2" value="{{arma.link_imagen2}}" required>
+
+        <label for="link_imagen3">URL Foto 3:</label>
+        <input type="text" id="link_imagen3" name="link_imagen3" value="{{arma.link_imagen3}}" required>
+
+        <label for="link_video">URL del Video:</label>
+        <input type="text" id="link_video" name="link_video" value="{{arma.link_video}}" required>
+
+        <label for="datof">Mini descripción 1:</label>
+        <input type="text" id="datof" name="datof" value="{{arma.datof}}" required>
+
+        <label for="datos">Mini descripción 2:</label>
+        <input type="text" id="datos" name="datos" value="{{arma.datos}}" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" value="{{arma.precio}}" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="{{arma.cantidad}}" required>
+
+        <button type="submit">Guardar Cambios</button>
+    </form>
+    <form id="deleteProductForm" action="/eliminararmadef" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este producto?');">
+    <input type="hidden" name="id" value="{{arma.id}}">
+    <button type="submit" style="background-color: red; margin-top: 10px;">Eliminar Producto</button>
+    </form>
+</body>
+</html>

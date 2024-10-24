@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/fondo.css" rel="stylesheet" type="text/css" />
+    <link href="/agregaralcarrito.css" rel="stylesheet" type="text/css" />
+    <link href="/imagenesarmas2.css" rel="stylesheet" type="text/css" />
+    <link href="/botonwallet.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+
+
+</head>
+<body class="wallpaper">
+
+<div style="height: 15vh;"></div>
+
+
+<div class="imagenesarmas">
+    <div class="contenido-principal">
+        <div class="cuadro-productos" id="cuadro-productos">
+
+            <!-- Primer Formulario -->
+           
+
+           <a type="button" onclick="document.getElementById('editProductForm1').submit();" class="bloque-imagen">
+                <form id="editProductForm1" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/O3HXhDx.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/O3HXhDx.jpeg" required>
+                </form>
+            </a>
+            
+            <a type="button" onclick="document.getElementById('editProductForm2').submit();" class="bloque-imagen">
+                <form id="editProductForm2" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.pinimg.com/originals/23/05/5a/23055aecf5abdc1fc686b62c3087243a.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.pinimg.com/originals/23/05/5a/23055aecf5abdc1fc686b62c3087243a.jpg" required>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm3').submit();" class="bloque-imagen">
+                <form id="editProductForm3" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://th.bing.com/th/id/R.58bd2cae6d33b1a054a5b4d9393bdc5b?rik=QeX7YoNo83WDzg&pid=ImgRaw&r=0">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://th.bing.com/th/id/R.58bd2cae6d33b1a054a5b4d9393bdc5b?rik=QeX7YoNo83WDzg&pid=ImgRaw&r=0" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm4').submit();" class="bloque-imagen">
+                <form id="editProductForm4" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.pinimg.com/736x/61/cf/83/61cf83b60a7f6a061776106e40c28e32.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.pinimg.com/736x/61/cf/83/61cf83b60a7f6a061776106e40c28e32.jpg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm5').submit();" class="bloque-imagen">
+                <form id="editProductForm5" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/564/873/desktop-wallpaper-ozen.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://e1.pxfuel.com/desktop-wallpaper/564/873/desktop-wallpaper-ozen.jpg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm6').submit();" class="bloque-imagen">
+                <form id="editProductForm6" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://th.bing.com/th/id/R.a691fb574c7f0ee8543b7eeb9e6c71b2?rik=QX7aYu7UrOfeCQ&riu=http%3a%2f%2fpm1.narvii.com%2f6045%2fa4c3edd24eac67b92f55de1f405f8564c2c0d89b_hq.jpg&ehk=Q9k91fvQ1Gb11nWUpd1VglPrHRvOKh%2bt%2bEWGAyswl0E%3d&risl=&pid=ImgRaw&r=0">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://th.bing.com/th/id/R.a691fb574c7f0ee8543b7eeb9e6c71b2?rik=QX7aYu7UrOfeCQ&riu=http%3a%2f%2fpm1.narvii.com%2f6045%2fa4c3edd24eac67b92f55de1f405f8564c2c0d89b_hq.jpg&ehk=Q9k91fvQ1Gb11nWUpd1VglPrHRvOKh%2bt%2bEWGAyswl0E%3d&risl=&pid=ImgRaw&r=0" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+
+
+
+<a type="button" onclick="document.getElementById('editProductForm7').submit();" class="bloque-imagen">
+                <form id="editProductForm7" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.pinimg.com/originals/d3/bd/f3/d3bdf3434e028dc4224886b252b6bbcd.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.pinimg.com/originals/d3/bd/f3/d3bdf3434e028dc4224886b252b6bbcd.jpg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+       
+
+<a type="button" onclick="document.getElementById('editProductForm8').submit();" class="bloque-imagen">
+                <form id="editProductForm8" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://64.media.tumblr.com/0d299cf709b9a7276296ff99db9b565d/996d17fe85a1e9b5-cb/s400x600/95ff06d1e9e17d1068b93ac14010724ab24c7811.png">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://64.media.tumblr.com/0d299cf709b9a7276296ff99db9b565d/996d17fe85a1e9b5-cb/s400x600/95ff06d1e9e17d1068b93ac14010724ab24c7811.png" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+        
+
+<a type="button" onclick="document.getElementById('editProductForm9').submit();" class="bloque-imagen">
+                <form id="editProductForm9" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://64.media.tumblr.com/df4137cf48500bc27b420fe0d2f77fbe/tumblr_pz0upi3GaH1yuk3dso2_250.png">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://64.media.tumblr.com/df4137cf48500bc27b420fe0d2f77fbe/tumblr_pz0upi3GaH1yuk3dso2_250.png" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+      
+
+<a type="button" onclick="document.getElementById('editProductForm10').submit();" class="bloque-imagen">
+                <form id="editProductForm10" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://pbs.twimg.com/profile_images/1290083645613637633/PtfZMOlW_400x400.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://pbs.twimg.com/profile_images/1290083645613637633/PtfZMOlW_400x400.jpg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm11').submit();" class="bloque-imagen">
+                <form id="editProductForm11" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcM07rBfzk0Gf0IDMmCa6N18bzSkxNQVkcqQ&s">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcM07rBfzk0Gf0IDMmCa6N18bzSkxNQVkcqQ&s" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm12').submit();" class="bloque-imagen">
+                <form id="editProductForm12" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/1/5/0/6/15060f6c35b8b65944047284449b1d4d.jpg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://akamai.sscdn.co/uploadfile/letras/fotos/1/5/0/6/15060f6c35b8b65944047284449b1d4d.jpg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm13').submit();" class="bloque-imagen">
+                <form id="editProductForm13" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJjNUnObDgKAD5bnNaD-WrIluztF5AhPB1Q&s">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJjNUnObDgKAD5bnNaD-WrIluztF5AhPB1Q&s" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm14').submit();" class="bloque-imagen">
+                <form id="editProductForm14" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWmCRfg9-Fk3YxQVTKhyPz6TyHKxT6qCoTQ&s">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWmCRfg9-Fk3YxQVTKhyPz6TyHKxT6qCoTQ&s" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm15').submit();" class="bloque-imagen">
+                <form id="editProductForm15" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZprb5Yi_k-GpxhnvLtqJjLzcVHhQsPhhsRQ&s">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZprb5Yi_k-GpxhnvLtqJjLzcVHhQsPhhsRQ&s" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm16').submit();" class="bloque-imagen">
+                <form id="editProductForm16" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzHuI0XYrFlsQtciZChSg9Yyr9f8iy1ZrxQ&s">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzHuI0XYrFlsQtciZChSg9Yyr9f8iy1ZrxQ&s" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm17').submit();" class="bloque-imagen">
+                <form id="editProductForm17" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/6QEP40c.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/6QEP40c.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm18').submit();" class="bloque-imagen">
+                <form id="editProductForm18" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/0tTYo8A.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/0tTYo8A.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm19').submit();" class="bloque-imagen">
+                <form id="editProductForm19" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/B0QzBrw.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/B0QzBrw.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+            
+<a type="button" onclick="document.getElementById('editProductForm20').submit();" class="bloque-imagen">
+                <form id="editProductForm20" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/gOSM2Fi.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/gOSM2Fi.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+<a type="button" onclick="document.getElementById('editProductForm21').submit();" class="bloque-imagen">
+                <form id="editProductForm21" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/wSue9tK.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/wSue9tK.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm22').submit();" class="bloque-imagen">
+                <form id="editProductForm22" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/4VEdP7Q.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/4VEdP7Q.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm23').submit();" class="bloque-imagen">
+                <form id="editProductForm23" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/Fil73ce.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/Fil73ce.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+            <a type="button" onclick="document.getElementById('editProductForm24').submit();" class="bloque-imagen">
+                <form id="editProductForm24" action="/actualizarfoto" method="POST">
+                    <input type="hidden" name="id" value="{{usuario.id}}">
+                    <img src="https://i.imgur.com/TYfk9fr.jpeg">
+                     <label for="name">link_imagen_perfil:</label>
+                    <input type="text" id="link_imagen_perfil" name="link_imagen_perfil" value="https://i.imgur.com/TYfk9fr.jpeg" required>
+                    <span>Guardar Cambios</span>
+                </form>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 65%;"></div> 
+
+<!-- https://i.pinimg.com/originals/23/05/5a/23055aecf5abdc1fc686b62c3087243a.jpg
+
+https://www.pngkey.com/png/detail/150-1509925_view-samegoogleiqdbsaucenao-mfw-doki-doki-literature-club-sayori.png
+
+https://th.bing.com/th/id/R.58bd2cae6d33b1a054a5b4d9393bdc5b?rik=QeX7YoNo83WDzg&pid=ImgRaw&r=0
+
+https://i.pinimg.com/736x/61/cf/83/61cf83b60a7f6a061776106e40c28e32.jpg
+
+https://e1.pxfuel.com/desktop-wallpaper/564/873/desktop-wallpaper-ozen.jpg
+
+
+5
+
+
+
+https://th.bing.com/th/id/R.a691fb574c7f0ee8543b7eeb9e6c71b2?rik=QX7aYu7UrOfeCQ&riu=http%3a%2f%2fpm1.narvii.com%2f6045%2fa4c3edd24eac67b92f55de1f405f8564c2c0d89b_hq.jpg&ehk=Q9k91fvQ1Gb11nWUpd1VglPrHRvOKh%2bt%2bEWGAyswl0E%3d&risl=&pid=ImgRaw&r=0
+
+https://i.pinimg.com/originals/d3/bd/f3/d3bdf3434e028dc4224886b252b6bbcd.jpg
+
+https://64.media.tumblr.com/0d299cf709b9a7276296ff99db9b565d/996d17fe85a1e9b5-cb/s400x600/95ff06d1e9e17d1068b93ac14010724ab24c7811.png
+
+https://64.media.tumblr.com/df4137cf48500bc27b420fe0d2f77fbe/tumblr_pz0upi3GaH1yuk3dso2_250.png
+
+https://pbs.twimg.com/profile_images/1290083645613637633/PtfZMOlW_400x400.jpg
+
+
+10
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcM07rBfzk0Gf0IDMmCa6N18bzSkxNQVkcqQ&s
+
+https://akamai.sscdn.co/uploadfile/letras/fotos/1/5/0/6/15060f6c35b8b65944047284449b1d4d.jpg
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJjNUnObDgKAD5bnNaD-WrIluztF5AhPB1Q&s
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWmCRfg9-Fk3YxQVTKhyPz6TyHKxT6qCoTQ&s
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZprb5Yi_k-GpxhnvLtqJjLzcVHhQsPhhsRQ&s
+
+
+15
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzHuI0XYrFlsQtciZChSg9Yyr9f8iy1ZrxQ&s-->
+
+  
+</body>
+
+</html>

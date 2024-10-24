@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p> es <span id="rango">{{rango}}</span></p>
+<script>
+        let rangoElement = document.getElementById('rango');
+        let x = parseFloat(rangoElement.innerText);
+        let resultadoElement = document.getElementById('resultado');
+        if (x === 1)
+        {
+              window.location.href = "/homeuser";
+        }
+        else if (x === 2) 
+        {
+             window.location.href = "/homeADMIN";
+        } 
+        else 
+        {
+             window.location.href = "/home";
+        }
+    </script>
+
+ </body>
+ </html>
